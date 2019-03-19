@@ -14,6 +14,6 @@ puts "Please Enter Store Name"
 new_name = gets.chomp
 
 @store7 = Store.create(:name => new_name)
-@store7.errors.full_messages.each do |e|
-    puts e
+@store7.errors.full_messages.each do |error|
+    puts error
 end
